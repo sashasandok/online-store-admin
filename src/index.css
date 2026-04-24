@@ -1,0 +1,99 @@
+@import 'tailwindcss';
+@import '../node_modules/@heroui/react/dist/styles.css';
+
+/* ── Theme CSS variables (migrated from _theme.scss) ── */
+:root {
+  --color-text: #0f172a;
+  --color-text-muted: rgba(15, 23, 42, 0.75);
+  --color-text-weak: rgba(15, 23, 42, 0.6);
+
+  --color-border: rgba(148, 163, 184, 0.25);
+  --color-border-strong: rgba(148, 163, 184, 0.4);
+
+  --color-surface: #ffffff;
+  --color-surface-muted: rgba(15, 23, 42, 0.03);
+  --color-surface-subtle: rgba(15, 23, 42, 0.02);
+
+  --color-brand: #3b82f6;
+  --color-brand-strong: #2563eb;
+
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+}
+
+html.dark {
+  --color-text: rgba(226, 232, 240, 0.92);
+  --color-text-muted: rgba(226, 232, 240, 0.75);
+  --color-text-weak: rgba(226, 232, 240, 0.75);
+
+  --color-border: rgba(148, 163, 184, 0.18);
+  --color-border-strong: rgba(148, 163, 184, 0.18);
+
+  --color-surface: rgba(2, 6, 23, 0.45);
+  --color-surface-muted: rgba(2, 6, 23, 0.45);
+  --color-surface-subtle: rgba(148, 163, 184, 0.06);
+}
+
+/* ── Global base styles ── */
+:root {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Optional: make headings consistent */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  margin: 0;
+}
+
+/* Selection */
+::selection {
+  background: rgba(59, 130, 246, 0.25);
+}

@@ -1,0 +1,5 @@
+export * from './ProductsList'
+export * from './ProductsTable'
+export * from './ProductsCards'
+export * from './Modals/CreateProduct'
+export * from './Modals/EditProduct'
